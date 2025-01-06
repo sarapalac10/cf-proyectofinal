@@ -1,9 +1,13 @@
 .footerContainer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
     background-color: #f0f0f0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footerContainer p {
@@ -14,12 +18,19 @@
 
 .footerContainer nav {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .footerContainer nav li {
     list-style: none;
     color: #333;
+}
+
+.footerSocialIcons {
+    display: flex;
+    gap: 1rem;
 }
 
 @media screen and (max-width: 768px) {
