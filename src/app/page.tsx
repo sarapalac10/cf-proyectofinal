@@ -25,6 +25,7 @@ export default function Home() {
         <div className={styles.lista_adopcion}>
           <h2>Conoce a tu nuevo mejor amigo</h2>
           <ListaAdopcion />
+          <button className={styles.lista_adopcion_button}>Conócelos a todos</button>
         </div>
       </main>
 
