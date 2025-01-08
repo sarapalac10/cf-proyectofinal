@@ -5,8 +5,8 @@ import styles from './styles.module.css';
 export default function Header() {
     return (
         <header className={styles.header}>
+            <h1>Hogar de paso Alegría Gatuna</h1>
             <Link href="/">
-                <h1>Hogar de paso Alegría Gatuna</h1>
                 <Image
                     src="/images/logo_inicio_alegria.png"
                     alt="Ícono de Alegría Gatuna"
