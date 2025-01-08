@@ -26,17 +26,21 @@
 .footerContainer nav li {
     list-style: none;
     color: #333;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .footerContainer nav a:hover {
     color: #87c493;
-    font-size: 1.5rem;
     transition: color 0.3s ease;
     text-decoration: none;
 }
 
 .footerSocialIcons {
+    display: flex;
+    gap: 1rem;
+}
+
+.footerLinks {
     display: flex;
     gap: 1rem;
 }
@@ -59,7 +63,9 @@
 
     .footerContainer nav {
         width: 100%;
+        flex-direction: column;
         justify-content: space-between;
+        gap: 1rem;
     }
 
     .footerContainer nav li {

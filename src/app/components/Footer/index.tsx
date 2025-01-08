@@ -6,9 +6,8 @@ export default function Footer() {
 
     return (
         <div className={styles.footerContainer}>
-            <p>Alegría Gatuna: Hogar de paso - 2025</p>
             <nav>
-                <ul>
+                <ul className={styles.footerSocialIcons}>
                     <li className={styles.footerSocialIcons}>
                         <Link href="/">
                             <Image
@@ -36,7 +35,7 @@ export default function Footer() {
                         </Link>
                     </li>
                 </ul>
-                <ul>
+                <ul className={styles.footerLinks}>
                     <li>
                         <Link href="/acerca">Acerca de nosotros</Link>
                     </li>
