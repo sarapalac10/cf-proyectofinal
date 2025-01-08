@@ -26,17 +26,25 @@ export default function Footer() {
                                 height={20}
                             />
                         </Link>
+                        <Link href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer">
+                            <Image
+                                src="/icons/whatsapp_icon.svg"
+                                alt="Ícono de whatsapp"
+                                width={20}
+                                height={20}
+                            />
+                        </Link>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <Link href="/">Acerca de nosotros</Link>
+                        <Link href="/acerca">Acerca de nosotros</Link>
                     </li>
                     <li>
-                        <Link href="/">Contacto</Link>
+                        <Link href="/contacto">Contacto</Link>
                     </li>
                     <li>
-                        <Link href="/">Ser voluntario</Link>
+                        <Link href="/voluntario">Ser voluntario</Link>
                     </li>
                 </ul>
             </nav>

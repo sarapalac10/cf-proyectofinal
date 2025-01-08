@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './styles.module.css';
 import { Gato, gatos } from '@/app/data/gatos';
+import Link from 'next/link';
 
 interface TarjetaAdopcionProps {
     nombre: string;
@@ -23,7 +24,9 @@ const TarjetaAdopcion = ({ nombre, edad, imagen }: TarjetaAdopcionProps) => {
             <div className={styles.adoptionCard__info}>
                 <h3 className={styles.adoptionCard__name}>{nombre}</h3>
                 <p className={styles.adoptionCard__detail}>Edad: {edad}</p>
-                <button className={styles.adoptionCard__button}>❤️ Adoptar</button>
+                <Link href="/adopcion">
+                    <button className={styles.adoptionCard__button}>❤️ Adoptar</button>
+                </Link>
             </div>
         </div>
     );

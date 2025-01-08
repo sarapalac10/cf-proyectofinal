@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from "./page.module.css";
 import ListaAdopcion from './components/ListaAdopcion';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -19,13 +20,14 @@ export default function Home() {
 
           <div className={styles.banner_content}>
             <p>Somos una organización sin fines de lucro dedicada al cuidado de gatos abandonados y maltratados. Brindamos hogar temporal, atención médica y todo el amor que necesitan.</p>
-            <button className={styles.banner_button}>Conoce cómo ser voluntario</button>
+            <Link href="/voluntario">
+              <button className={styles.banner_button}>Conoce cómo ser voluntario</button>
+            </Link>
           </div>
         </div>
         <div className={styles.lista_adopcion}>
           <h2>Conoce a tu nuevo mejor amigo</h2>
           <ListaAdopcion />
-          <button className={styles.lista_adopcion_button}>Conócelos a todos</button>
         </div>
       </main>
 

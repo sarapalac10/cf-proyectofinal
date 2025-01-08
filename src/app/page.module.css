@@ -182,6 +182,7 @@ a.secondary {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+  justify-items: center;
 }
 
 .banner_button {
@@ -200,20 +201,11 @@ a.secondary {
   border: 1px solid #87c493;
 }
 
-/* .lista_adopcion {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  justify-items: center;
-  align-items: center;
-  padding: 2rem;
-  background-color: rgb(244, 165, 165);
-} */
-
 .lista_adopcion h2 {
-  margin-top: 1rem;
+  margin: 1rem;
   color: #3f6d48;
   font-size: 2rem;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
